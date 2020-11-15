@@ -1,0 +1,37 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: mutoe-cms-postgres
+    image: postgres
+    networks:
+      - mutoe-cms
+    env_file:
+      - cms-api/.env
+    environment:
+      POSTGRES_USER: ${TYPEORM_USERNAME}
+      POSTGRES_PASSWORD: ${TYPEORM_PASSWORD}
+      PGDATA: /data/postgres
+      POSTGRES_DB: ${TYPEORM_DATABASE}
+    ports:
+      - '${TYPEORM_PORT}:5432'
+
+  nest:
+    container_name: mutoe-cms-api
+    build:
+      context: cms-api
+    env_file:
+      - cms-api/.env
+    networks:
+      - mutoe-cms
+    environment:
+      SWAGGER_ENABLE: 'true'
+      TYPEORM_HOST: mutoe-cms-postgres
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgres
+
+networks:
+  mutoe-cms:
+    driver: bridge
