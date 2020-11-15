@@ -1,0 +1,11 @@
+[submodule "cms-api"]
+  path = cms-api
+  url = git@github.com:mutoe-cms/cms-api.git
+
+[submodule "cms-admin"]
+  path = cms-admin
+  url = git@github.com:mutoe-cms/cms-admin.git
+
+[submodule "cms-page-builder"]
+  path = cms-page-builder
+  url = git@github.com:mutoe-cms/cms-page-builder.git
