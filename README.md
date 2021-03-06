@@ -1,5 +1,9 @@
 # Mutoe CMS
 
+# Requirements
+
+- Nodejs 14+
+
 # Bootstrap
 
 ```shell
