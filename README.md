@@ -26,3 +26,11 @@ git submodule update --recursive --remote
 bash start.sh
 docker-compose up
 ```
+
+### Update changelog (in every project)
+
+_You should install `conventional-changelog-cli` globally first_
+
+```shell
+conventional-changelog -p angular -i CHANGELOG.md -s
+```
