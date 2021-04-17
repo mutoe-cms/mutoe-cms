@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Category Module Integration" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+    <config-file value="$PROJECT_DIR$/cms-api/test/jest-e2e.json" />
+    <node-interpreter value="project" />
+    <node-options value="" />
+    <jest-package value="$PROJECT_DIR$/cms-api/node_modules/jest" />
+    <working-dir value="$PROJECT_DIR$/cms-api/" />
+    <envs />
+    <scope-kind value="SUITE" />
+    <test-file value="$PROJECT_DIR$/cms-api/test/category.e2e-spec.ts" />
+    <test-names>
+      <test-name value="Category Module Integration" />
+    </test-names>
+    <method v="2" />
+  </configuration>
+</component>
