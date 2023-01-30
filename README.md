@@ -2,7 +2,7 @@
 
 # Requirements
 
-- Nodejs 14+
+- Nodejs 14 or higher
 
 # Bootstrap
 
@@ -17,6 +17,8 @@ docker-compose up --no-build
 # Development
 
 This action need you have full access for this project.
+
+Recommended IDE is JetBrains IDEA or WebStorm
 
 ```shell
 git clone https://github.com/mutoe-cms/mutoe-cms.git
@@ -34,3 +36,7 @@ _You should install `conventional-changelog-cli` globally first_
 ```shell
 conventional-changelog -p angular -i CHANGELOG.md -s
 ```
+
+# Roadmap
+
+- [ ] Add node minimal and latest version to CI.
