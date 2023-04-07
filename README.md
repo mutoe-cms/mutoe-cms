@@ -29,13 +29,22 @@ bash start.sh
 docker-compose up
 ```
 
-### Update changelog (in every project)
+## Publish version (in every project)
 
-_You should install `conventional-changelog-cli` globally first_
+Requirements:
 
-```shell
-conventional-changelog -p angular -i CHANGELOG.md -s
-```
+1. Install `conventional-changelog-cli` globally first 
+
+   ```bash
+   pnpm add -g conventional-changelog-cli 
+   ```
+   
+2. Update npm package version and tag git commit. 
+   (It will update CHANGLOG automatically)
+
+   ```bash 
+   npm version patch
+   ```
 
 # Roadmap
 

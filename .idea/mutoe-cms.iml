@@ -9,6 +9,9 @@
       <excludeFolder url="file://$MODULE_DIR$/cms-page-builder/.husky/_" />
       <excludeFolder url="file://$MODULE_DIR$/cms-page-builder/dist" />
       <excludeFolder url="file://$MODULE_DIR$/nginx/public" />
+      <excludeFolder url="file://$MODULE_DIR$/cms-page-builder/coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/cms-admin/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/cms-admin/coverage" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
