@@ -1,5 +1,9 @@
 # Mutoe CMS
 
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mutoe-cms/cms-api/ci.yml?label=CMS%20API&style=flat-square)](https://github.com/mutoe-cms/cms-api/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mutoe-cms/cms-admin/ci.yml?label=CMS%20ADMIN&style=flat-square)](https://github.com/mutoe-cms/cms-admin/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mutoe-cms/cms-page-builder/ci.yml?label=CMS%20PAGE%20BUILDER&style=flat-square)](https://github.com/mutoe-cms/cms-page-builder/actions)
+
 # Requirements
 
 - Nodejs 14 or higher
@@ -33,16 +37,16 @@ docker-compose up
 
 Requirements:
 
-1. Install `conventional-changelog-cli` globally first 
+1. Install `conventional-changelog-cli` globally first
 
    ```bash
-   pnpm add -g conventional-changelog-cli 
+   pnpm add -g conventional-changelog-cli
    ```
-   
-2. Update npm package version and tag git commit. 
+
+2. Update npm package version and tag git commit.
    (It will update CHANGLOG automatically)
 
-   ```bash 
+   ```bash
    npm version patch
    ```
 
